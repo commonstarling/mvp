@@ -1,44 +1,17 @@
-# Project Name #
+  Session Brew Finder
 
-<!-- 
-> This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
+  An app for people who want to drink without getting drunk
 
-There is an approach called "working backwards" that is widely used at Amazon. They work backwards from the customer, rather than starting with an idea for a product and trying to bolt customers onto it. While working backwards can be applied to any specific product decision, using this approach is especially important when developing new products or features.
+  Session Brew Finder allows users to find session beers -- brews with less than 4% alcohol by volume (ABV) -- based on their taste for certain types of beers. Users can also keep track of session beers that they might like to try.
 
-For new initiatives a product manager typically starts by writing an internal press release announcing the finished product. The target audience for the press release is the new/updated product's customers, which can be retail customers or internal users of a tool or technology. Internal press releases are centered around the customer problem, how current solutions (internal or external) fail, and how the new product will blow away existing solutions.
+  Many craft beers include high ABVs, which can make it hard to enjoy those beers without becoming drunk in a short amount of time. For beer drinkers who want to try different ales without getting drunk, session beers can be a great choice. However, there is no one location with info on various session beers on the market, leaving session brew fans to search numerous sites on the internet for session beer descriptions or just pick a beer with a low ABV without knowing much about the beer's flavor notes or the breweries that made them.
 
-If the benefits listed don't sound very interesting or exciting to customers, then perhaps they're not (and shouldn't be built). Instead, the product manager should keep iterating on the press release until they've come up with benefits that actually sound like benefits. Iterating on a press release is a lot less expensive than iterating on the product itself (and quicker!).
+  Session Brew Finder allows you to choose types of session beers that you'd like to try, such as lagers or IPAs, and returns a list of beers that you might consider trying, along with the beer's description. You can save any beers you'd like to keep track of for future enjoyment, or delete ones that you've already checked off the list.
 
-If the press release is more than a page and a half, it is probably too long. Keep it simple. 3-4 sentences for most paragraphs. Cut out the fat. Don't make it into a spec. You can accompany the press release with a FAQ that answers all of the other business or execution questions so the press release can stay focused on what the customer gets. My rule of thumb is that if the press release is hard to write, then the product is probably going to suck. Keep working at it until the outline for each paragraph flows. 
+  "I created Session Brew Finder because I found it difficult to find beers that I would be able enjoy without getting tipsy when I went out with friends, which is important when you have a busy lifestyle and need to accomplish other things in your day after an outing," said creator Sheena Ramirez. "Rather than feeling like I can't have a drink, I can now use the app to find a beer that tastes good while allowing me to still feel alert."
 
-Oh, and I also like to write press-releases in what I call "Oprah-speak" for mainstream consumer products. Imagine you're sitting on Oprah's couch and have just explained the product to her, and then you listen as she explains it to her audience. That's "Oprah-speak", not "Geek-speak".
+  To use Session Brew Finder, just use the drop-down menu to select a type of beer that you'd like to try. A list of beers in that category will show, and you can choose beers that you'd like to save from that list. Use the list on the right side of your screen to review beers that you've already saved or to remove beers from the saved list.
 
-Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
- -->
- 
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  "Session Brew Finder has allowed me to find craft beers that I didn't even know existed, and I've enjoyed trying the beers on my list," user Tracy Walker says.
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-
-## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
-
-## Problem ##
-  > Describe the problem your product solves.
-
-## Solution ##
-  > Describe how your product elegantly solves the problem.
-
-## Quote from You ##
-  > A quote from a spokesperson in your company.
-
-## How to Get Started ##
-  > Describe how easy it is to get started.
-
-## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
-
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  Visit www.sessionbrewfinder.com to start your list of session brews to try at your next outing!
