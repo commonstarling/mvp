@@ -1,0 +1,31 @@
+{
+  "name": "hrr24-mvp",
+  "version": "1.0.0",
+  "description": "Session Brew Finder",
+  "main": "app.js",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "install": "^0.10.1",
+    "mongodb": "^2.2.29",
+    "npm": "^5.0.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commonstarling/hrr24-mvp.git"
+  },
+  "author": " (Sheena Ramirez)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/commonstarling/hrr24-mvp/issues"
+  },
+  "homepage": "https://github.com/commonstarling/hrr24-mvp#readme"
+}
