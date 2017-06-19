@@ -3,10 +3,23 @@
   <head>
     <title>Session Brew Finder</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
   </head>
 
   <body>
     <h1>Session Brew Finder</h1>
-    <h3>Find you new favorite beer today!</h3>
+    <h3>Find you new favorite beer</h3>
+    <nav class="divider">
+     <select>
+        <option value="bock">Bock</option>
+        <option value="blonde">Blonde</option>
+        <option value="sour">Sour</option>
+        <option value="ale">Ale</option>
+        <option value="all">All</option>
+      </select>
+    </nav>
+    <div id="app"></div>
+    <script src="compiled/public/app.js"></script>
   </body>
 </html>
