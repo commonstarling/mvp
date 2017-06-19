@@ -1,7 +1,7 @@
-class MyComponent extends React.Component {
-  render() {
-    return <div>Hello World</div>;
-  }
-}
+// class MyComponent extends React.Component {
+//   render() {
+//     return <div>Hello World</div>;
+//   }
+// }
 
-ReactDOMServer.renderToString(<MyComponent />);
+// ReactDOMServer.renderToString(<MyComponent />);
