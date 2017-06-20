@@ -1,0 +1,37 @@
+'use strict';
+
+$(document).ready(function () {
+
+  var $form = $("#pick-beer");
+
+  $form.on('change', function (e) {
+    var element = $(this).find('option:selected');
+    var query = element[0].value;
+    if (query === '/all') {
+      console.log('all beers requested');
+      $.ajax({
+        xhrFields: {
+          withCredentials: true
+        },
+        headers: {
+          'Access-Control-Allow-Origin': '127.0.0.1:8080'
+        },
+        type: "GET",
+        contentType: 'text/plain',
+        url: "https://api.brewerydb.com/v2/beers?key=2065166f991f554ba66c6c02263c9554&format=json&abv=-5",
+        // headers: {  },
+        abv: -5,
+        crossDomain: true,
+
+        dataType: 'json',
+        success: function success(result) {
+          console.log('we\'ve got data');
+        },
+        error: function error(e) {
+          console.log(e);
+        }
+      });
+    }
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NjcmlwdC5qcyJdLCJuYW1lcyI6WyIkIiwiZG9jdW1lbnQiLCJyZWFkeSIsIiRmb3JtIiwib24iLCJlIiwiZWxlbWVudCIsImZpbmQiLCJxdWVyeSIsInZhbHVlIiwiY29uc29sZSIsImxvZyIsImFqYXgiLCJ4aHJGaWVsZHMiLCJ3aXRoQ3JlZGVudGlhbHMiLCJoZWFkZXJzIiwidHlwZSIsImNvbnRlbnRUeXBlIiwidXJsIiwiYWJ2IiwiY3Jvc3NEb21haW4iLCJkYXRhVHlwZSIsInN1Y2Nlc3MiLCJyZXN1bHQiLCJlcnJvciJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsRUFBRUMsUUFBRixFQUFZQyxLQUFaLENBQWtCLFlBQVk7O0FBRTFCLE1BQUlDLFFBQVFILEVBQUUsWUFBRixDQUFaOztBQUVBRyxRQUFNQyxFQUFOLENBQVMsUUFBVCxFQUFtQixVQUFTQyxDQUFULEVBQVc7QUFDNUIsUUFBSUMsVUFBVU4sRUFBRSxJQUFGLEVBQVFPLElBQVIsQ0FBYSxpQkFBYixDQUFkO0FBQ0EsUUFBSUMsUUFBUUYsUUFBUSxDQUFSLEVBQVdHLEtBQXZCO0FBQ0EsUUFBSUQsVUFBVSxNQUFkLEVBQXNCO0FBQ2xCRSxjQUFRQyxHQUFSLENBQVkscUJBQVo7QUFDQVgsUUFBRVksSUFBRixDQUFRO0FBQ05DLG1CQUFXO0FBQ1RDLDJCQUFpQjtBQURSLFNBREw7QUFJTkMsaUJBQVM7QUFDUCx5Q0FBK0I7QUFEeEIsU0FKSDtBQU9OQyxjQUFNLEtBUEE7QUFRTkMscUJBQWEsWUFSUDtBQVNOQyxhQUFLLDRGQVRDO0FBVU47QUFDQUMsYUFBSyxDQUFDLENBWEE7QUFZTkMscUJBQWEsSUFaUDs7QUFjTkMsa0JBQVUsTUFkSjtBQWVOQyxpQkFBUyxpQkFBVUMsTUFBVixFQUFrQjtBQUN2QmIsa0JBQVFDLEdBQVIsQ0FBWSxpQkFBWjtBQUNILFNBakJLO0FBa0JOYSxlQUFPLGVBQVVuQixDQUFWLEVBQWE7QUFDaEJLLGtCQUFRQyxHQUFSLENBQVlOLENBQVo7QUFDSDtBQXBCSyxPQUFSO0FBc0JIO0FBQ0YsR0E1QkQ7QUErQkgsQ0FuQ0QiLCJmaWxlIjoic2NyaXB0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiJChkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24gKCkge1xuXG4gICAgdmFyICRmb3JtID0gJChcIiNwaWNrLWJlZXJcIik7XG5cbiAgICAkZm9ybS5vbignY2hhbmdlJywgZnVuY3Rpb24oZSl7XG4gICAgICB2YXIgZWxlbWVudCA9ICQodGhpcykuZmluZCgnb3B0aW9uOnNlbGVjdGVkJyk7XG4gICAgICB2YXIgcXVlcnkgPSBlbGVtZW50WzBdLnZhbHVlO1xuICAgICAgaWYgKHF1ZXJ5ID09PSAnL2FsbCcpIHtcbiAgICAgICAgICBjb25zb2xlLmxvZygnYWxsIGJlZXJzIHJlcXVlc3RlZCcpO1xuICAgICAgICAgICQuYWpheCgge1xuICAgICAgICAgICAgeGhyRmllbGRzOiB7XG4gICAgICAgICAgICAgIHdpdGhDcmVkZW50aWFsczogdHJ1ZVxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIGhlYWRlcnM6IHtcbiAgICAgICAgICAgICAgJ0FjY2Vzcy1Db250cm9sLUFsbG93LU9yaWdpbic6ICcxMjcuMC4wLjE6ODA4MCdcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB0eXBlOiBcIkdFVFwiLFxuICAgICAgICAgICAgY29udGVudFR5cGU6ICd0ZXh0L3BsYWluJyxcbiAgICAgICAgICAgIHVybDogXCJodHRwczovL2FwaS5icmV3ZXJ5ZGIuY29tL3YyL2JlZXJzP2tleT0yMDY1MTY2Zjk5MWY1NTRiYTY2YzZjMDIyNjNjOTU1NCZmb3JtYXQ9anNvbiZhYnY9LTVcIixcbiAgICAgICAgICAgIC8vIGhlYWRlcnM6IHsgIH0sXG4gICAgICAgICAgICBhYnY6IC01LFxuICAgICAgICAgICAgY3Jvc3NEb21haW46IHRydWUsXG5cbiAgICAgICAgICAgIGRhdGFUeXBlOiAnanNvbicsXG4gICAgICAgICAgICBzdWNjZXNzOiBmdW5jdGlvbiAocmVzdWx0KSB7XG4gICAgICAgICAgICAgICAgY29uc29sZS5sb2coJ3dlXFwndmUgZ290IGRhdGEnKTtcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICBlcnJvcjogZnVuY3Rpb24gKGUpIHtcbiAgICAgICAgICAgICAgICBjb25zb2xlLmxvZyhlKTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICB9KTtcbiAgICAgIH1cbiAgICB9KTtcblxuXG59KTsiXX0=

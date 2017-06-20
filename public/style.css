@@ -1,11 +1,16 @@
 body {
-  background-color: grey;
-  color: white;
+  background-color: #CAEBF2;
+  color: black;
   text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+
+header {
+  background-image: url('www.unsplash.com/search/beer?photo=82fcB8ZgdNI');
 }
 
 .divider {
-  background-color: blue;
+  background-color: #FF383F;
   height: 30px;
   width: 100%;
   color: black;
@@ -13,20 +18,30 @@ body {
 }
 
 #app {
-  border: 3px solid white;
   margin: 5px 5px;
   height: 100px;
   color: black;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .beers-list {
-  background-color: pink;
+  background-color: #EFEFEF;
   float: left;
-  width: 50%;
+  width: 49%;
+  margin: 2px;
 }
 
 .saved-beers {
-  background-color: purple;
-  width: 50%;
+  background-color: #EFEFEF;
+  width: 49%;
   float: right;
+  font-family: 'Poppins', sans-serif;
+  margin: 2px;
+}
+
+.beer-entry {
+  background-color: #A9A9A9;
+  margin: 1em;
+  font-family: 'Poppins', sans-serif;
 }

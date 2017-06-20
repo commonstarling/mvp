@@ -5,23 +5,30 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
     <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Poppins" rel="stylesheet">
   </head>
 
   <body>
+    <header>
     <h1>Session Brew Finder</h1>
     <h3>Find you new favorite beer</h3>
+    </header>
     <nav class="divider">
-     <select>
+    <form id="pick-beer" method="get">
+     <select >
         <option selected="selected">Choose an option</option>
-        <option value="all">All</option>
+        <option value="/all">All</option>
 <!--    <option value="Ale">Ale</option>
         <option value="bock">Bock</option>
         <option value="blonde">Blonde</option>
         <option value="sour">Sour</option> -->
       </select>
+    </form>
     </nav>
     <div id="app"></div>
-    <div id="saved-beers"></div>
     <script src="compiled/public/app.js"></script>
+<!--     <script src="../server.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
