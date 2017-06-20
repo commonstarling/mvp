@@ -19,7 +19,7 @@ app.get('/all', cors(), function(req, res) {
     if (err) {
       console.error(err);
     } else {
-      var limitedData = [data[Math.ceil(Math.random()*50)], data[Math.ceil(Math.random()*50)], data[Math.ceil(Math.random()*50)], data[Math.ceil(Math.random()*50)], data[Math.ceil(Math.random()*50)]];
+      var limitedData = [data[Math.ceil(Math.random()*30)], data[Math.ceil(Math.random()*30)], data[Math.ceil(Math.random()*30)], data[Math.ceil(Math.random()*30)], data[Math.ceil(Math.random()*30)]];
       res.send(limitedData);
     }
   });
