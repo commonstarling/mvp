@@ -18,3 +18,15 @@ body {
   height: 100px;
   color: black;
 }
+
+.beers-list {
+  background-color: pink;
+  float: left;
+  width: 50%;
+}
+
+.saved-beers {
+  background-color: purple;
+  width: 50%;
+  float: right;
+}
