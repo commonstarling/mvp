@@ -15,8 +15,9 @@ class App extends React.Component {
   }
 
   handleSubmit(event) {
-    console.log('The type of beer you want to see is: ' + this.state.value);
     event.preventDefault();
+    console.log('The type of beer you want to see is: ' + this.state.value);
+    console.log('here is the event ', event);
     $.get(`/${this.state.value}`, (data) => {
       this.setState({beers: data});
       console.log('props ===== ', this.state.beers);
@@ -31,7 +32,12 @@ class App extends React.Component {
             <label>
               Pick the type of beer you'd like to drink:
               <select value={this.state.value} onChange={this.handleChange}>
-                <option value="/all">All</option>
+                <option value="all">All</option>
+                <option value="AmericanIPAs">American-Style IPAs</option>
+                <option value="cider">Ciders</option>
+                <option value="Dortmunder">Dortmunders</option>
+                <option value="ScotchAle">Scotch Ales</option>
+                <option value="BelgianFrench">Belgian/French Ales</option>
               </select>
             </label>
             <input type="submit" value="Submit" />
@@ -45,4 +51,3 @@ class App extends React.Component {
 }
 
 window.App = App;
-
