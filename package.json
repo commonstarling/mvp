@@ -8,6 +8,7 @@
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "body-parser": "^1.17.2",
     "brewerydb-node": "0.0.1",
+    "cors": "^2.8.3",
     "express": "^4.15.3",
     "install": "^0.10.1",
     "mongodb": "^2.2.29",
@@ -26,7 +27,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "build": "babel . --out-dir public/compiled --presets=es2015,react --ignore=node_modules,bower_components,compiled --source-maps inline"
+    "build": "babel . --out-dir public/compiled --presets=es2015,react --ignore=node_modules,bower_components,compiled --source-maps inline",
+    "watch": "npm run build & npm start"
   },
   "repository": {
     "type": "git",
