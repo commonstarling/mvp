@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/node,bower
 
+config/
+
 ### Bower ###
 bower_components
 .bower-cache

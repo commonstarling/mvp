@@ -1,8 +1,9 @@
 var express = require('express');
 var app = express();
 var cors = require('cors');
+var config = require('./config/config');
 var BreweryDb = require('brewerydb-node');
-var brewdb = new BreweryDb('2065166f991f554ba66c6c02263c9554');
+var brewdb = new BreweryDb(config.BREWERYDB_KEY);
 var path = require('path');
 app.use(express.static('public'));
 app.use(cors());
