@@ -5,7 +5,7 @@ class BeerListView extends React.Component {
   render() {
     return (
             <div className='beers-list'>
-              <h1>Beer Suggestions</h1>
+              <h4>Beer Suggestions</h4>
               {
                 this.props.beers.map( (beer) => {
                 return <BeerEntry beer={beer}/>;

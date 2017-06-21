@@ -447,14 +447,25 @@ template {
 }
 
 body {
-  background-color: #CAEBF2;
+  background-color: #010726;
   color: black;
   text-align: center;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Alfa Slab One', cursive;
+  padding: 0;
+}
+
+header {
+  color: #EFEFEF;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 0.002px black;
+}
+
+header h1 {
+  letter-spacing: 2px;
 }
 
 .divider {
-  background-color: #FF383F;
+  background-color: #F2803D;
   height: 30px;
   width: 100%;
   color: black;
@@ -466,29 +477,34 @@ body {
   height: 100px;
   color: black;
   font-family: 'Poppins', sans-serif;
-
+  -webkit-text-stroke: 0.02px black;
 }
 
 .beers-list {
   background-color: #EFEFEF;
-  width: 49%;
-  float: left;
+  width: 50%;
+  height: auto;
   font-family: 'Poppins', sans-serif;
-  margin: 2px;
+  margin: 0 auto;
 }
 
 .saved-beers {
   background-color: #EFEFEF;
   width: 49%;
-  float: right;
   font-family: 'Poppins', sans-serif;
   margin: 2px;
+  display: none;
 }
 
 .beer-entry {
-  background-color: #A9A9A9;
+  background-color: #584F8c;
   margin: 1em;
   font: normal 13px/100% 'Poppins', sans-serif;
   height: 120px;
   padding: 2px;
+}
+
+.beer-entry a {
+  color: #F2803D;
+  text-decoration: none;
 }

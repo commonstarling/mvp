@@ -44,7 +44,6 @@ class App extends React.Component {
           </form>
         </div>
         <div id='list-view'><BeerListView beers={this.state.beers}/></div>
-        <div id='saved-view'></div>
       </section>
     );
   }

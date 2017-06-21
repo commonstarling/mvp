@@ -4,7 +4,8 @@ var cors = require('cors');
 var config = require('./config/config');
 var BreweryDb = require('brewerydb-node');
 var brewdb = new BreweryDb(config.BREWERYDB_KEY);
-var path = require('path');
+var mongoose = require("mongoose");
+app.db = mongoose.connect('mongodb://127.0.0.1/test');
 app.use(express.static('public'));
 app.use(cors());
 

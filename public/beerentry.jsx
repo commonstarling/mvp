@@ -5,7 +5,7 @@ class BeerEntry extends React.Component {
   render() {
     return (
             <div className='beer-entry'>
-              <h1>{this.props.beer.name}</h1>
+              <h3>{this.props.beer.name}</h3>
               <p>ABV: {this.props.beer.abv}%</p>
               <p>Brewery: <a href={this.props.beer.breweries[0].website}>{this.props.beer.breweries[0].name}</a></p>
               <p>Style: {this.props.beer.style.name}</p>
