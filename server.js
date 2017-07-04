@@ -20,7 +20,7 @@ app.get('/all', cors(), function(req, res) {
     if (err) {
       console.error(err);
     } else {
-      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
+      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
       res.send(limitedData);
     }
   });
@@ -31,7 +31,7 @@ app.get('/AmericanIPAs', function(req, res) {
     if (err) {
       console.error(err);
     } else {
-      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
+      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
       res.send(limitedData);
     }
   });
@@ -42,7 +42,7 @@ app.get('/Dortmunder', function(req, res) {
     if (err) {
       console.error(err);
     } else {
-      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
+      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
       res.send(limitedData);
     }
   });
@@ -53,7 +53,7 @@ app.get('/ScotchAle', function(req, res) {
     if (err) {
       console.error(err);
     } else {
-      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
+      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
       res.send(limitedData);
     }
   });
@@ -64,7 +64,7 @@ app.get('/BelgianFrench', function(req, res) {
     if (err) {
       console.error(err);
     } else {
-      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
+      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
       res.send(limitedData);
     }
   });
@@ -75,7 +75,7 @@ app.get('/cider', function(req, res) {
     if (err) {
       console.error(err);
     } else {
-      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
+      var limitedData = [data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)], data[Math.ceil(Math.random()*data.length)]];
       res.send(limitedData);
     }
   });

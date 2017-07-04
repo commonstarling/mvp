@@ -482,10 +482,11 @@ header h1 {
 
 .beers-list {
   background-color: #EFEFEF;
-  width: 50%;
-  height: auto;
+  width: 49%;
+  height: 25em;
   font-family: 'Poppins', sans-serif;
   margin: 0 auto;
+  overflow: scroll;
 }
 
 .saved-beers {
@@ -500,8 +501,18 @@ header h1 {
   background-color: #584F8c;
   margin: 1em;
   font: normal 13px/100% 'Poppins', sans-serif;
-  height: 120px;
   padding: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.expanded-beer {
+  height: auto;
+}
+
+.normal-beer {
+  height: 120px;
 }
 
 .beer-entry a {

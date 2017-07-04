@@ -1,4 +1,4 @@
-var testData = {abv: 4.5, name: 'Moonlight White Wheat', breweries: [{name: 'Sycamore Brewing', website: 'http://sycamorebrew.com/ageverification?url=http://sycamorebrew.com/about-1/'}], style:{name: 'Lager'}};
+var testData = {abv: 4.5, name: 'Moonlight White Wheat', breweries: [{name: 'Sycamore Brewing', website: 'http://sycamorebrew.com/ageverification?url=http://sycamorebrew.com/about-1/', locations: [{region: 'North Carolina'}]}], style:{name: 'Lager'}};
 
 class App extends React.Component {
   constructor(props) {
@@ -16,8 +16,6 @@ class App extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log('The type of beer you want to see is: ' + this.state.value);
-    console.log('here is the event ', event);
     $.get(`/${this.state.value}`, (data) => {
       this.setState({beers: data});
       console.log('props ===== ', this.state.beers);
